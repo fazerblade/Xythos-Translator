@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,
+maximum-scale=1,user-scalable=no"><title>Xythos Translator</title><style>
+*{box-sizing:border-box;}
+html{overflow-x:hidden;overflow-y:auto;}
+body{background:black;;margin:0;width:100%;min-height:90vh;
+border:3px solid;
+border-image:linear-gradient(to bottom,#B30000,#800000,#4D0000)1;position:relative;left:0;}
+#zz{background:
+linear-gradient(to right,#B30000,#800000,#4D0000,#111111,
+#000000);margin:0;width:100%;height:100px;border:2px solid;
+border-image:linear-gradient(to right,#B30000,#800000,#4D0000,#111111,#000000)1;
+position:relative;right:auto;}
+#x{position:relative;left:15px;top:20px;}
+#dx{background:linear-gradient(to left,#000000, #111111,#4D0000,#800000,#B30000);
+position:relative;width:100%;height:40px;margin:0;
+border:2px solid;
+border-image:linear-gradient(to bottom, #B30000,#800000,#4D0000,#4D0000)1;
+font-size:10px;font-weight:bold;}
+#xd{position:relative;left:15px;}
+</style><link rel="stylesheet" href="major.css">
+</head><body>
+<div id="zz" class="txt"><h2 id="x">
+Xythos Translator</h2>
+<p id="xd">Made by: LastXyloto</p>
+<button onclick="dx()" id="dx" class="txt">English TO Xythos</button></div>
+/// MAJOR CSS AND JS WILL TAKE ON FROM HERE:
+<h2 id="coz" class="txt">Input:</h2>
+<h2 id="zoc" class="txt">Output:</h2>
+<div id="a"class="txt" hidden>
+<textarea id="baa" class="xyth" placeholder="Xythos Here:" spellcheck="false" autocorrect="off" autocomplete="off"></textarea>
+<button id="kka"onclick="a()"class="h nn">Translate</button>
+<button onclick="clr()"class="i nn">Clear</button>
+<button onclick="cpy()"class="j nn">Copy</button>
+<textarea placeholder="English..."id="aab"readonly></textarea>
+</div>
+<div id="b" class="txt">
+<textarea id="baa" class="engl" placeholder="English Here:" spellcheck="false" autocorrect="off" autocomplete="off"></textarea>
+<button id="akk"onclick="b()"class="h nn">Translate</button>
+<button onclick="clr()"id="i"class="i nn">Clear</button>
+<button onclick="cpy()"id="j"class="j nn">Copy</button>
+<textarea placeholder="Xythos..." id="aab" readonly></textarea>
+</div>
+<script>
+function dx() {
+let sign = document.getElementById("dx").textContent;
+if (sign === "English TO Xythos") {
+document.getElementById("dx").textContent="Xythos TO English";
+document.getElementById("b").hidden=true;
+document.getElementById("a").hidden=false;}
+else {
+document.getElementById("dx").textContent="English TO Xythos";
+document.getElementById("a").hidden=true;
+document.getElementById("b").hidden=false;}
+}</script><script src="major.js"></script>
+</body></html>
